@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.7;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all 0.3s ease;
+}
+
+nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+nav a:hover {
+  color: #1a1a1a;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 80px;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+}
+
+.hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.hero h1 {
+  font-size: 3.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  max-width: 900px;
+}
+
+.hero h1 strong {
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #4a4a4a;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  font-weight: 300;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: #1a1a1a;
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+  background: #333;
+}
+
+/* Services Section */
+.services {
+  padding: 8rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-bottom: 5rem;
+}
+
+.section-label {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #1a1a1a;
+  max-width: 700px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.service-card {
+  padding: 2.5rem 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.service-number {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.service-card p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* About Section */
+.about {
+  background: #fafafa;
+  padding: 8rem 4rem;
+}
+
+.about-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.about-text p {
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.metric {
+  border-top: 2px solid #1a1a1a;
+  padding-top: 1.5rem;
+}
+
+.metric-number {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: #666;
+  letter-spacing: 0.5px;
+}
+
+/* Approach Section */
+.approach {
+  padding: 8rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.approach-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+.approach-item {
+  display: flex;
+  gap: 2rem;
+}
+
+.approach-number {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  min-width: 40px;
+}
+
+.approach-content h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.approach-content p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contact {
+  background: #1a1a1a;
+  color: white;
+  padding: 8rem 4rem;
+}
+
+.contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  padding-right: 4rem;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.contact-details {
+  margin-top: 3rem;
+}
+
+.contact-detail {
+  margin-bottom: 1.5rem;
+}
+
+.contact-detail-label {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-detail-value {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form input {
+  border-radius: 1rem;
+}
+
+.contact-form textarea {
+  border-radius: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1.2rem;
+  background: transparent;
+  border: 1px solid #444;
+  color: white;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 1.2rem 2.5rem;
+  background: white;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background: #f0f0f0;
+}
+
+/* Footer */
+footer {
+  background: #0a0a0a;
+  color: #888;
+  padding: 3rem 4rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  nav {
+    padding: 1.5rem 2rem;
+  }
+
+  .hero-content,
+  .services,
+  .approach,
+  .contact-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-container,
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .approach-list {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}
